@@ -5,8 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legal-Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700&family=Poppins&display=swap" rel="stylesheet">
+    <!-- fontawesome  -->
+    <script src="https://kit.fontawesome.com/d7b7563d24.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'symon': '#B68C5A',
+              },
+              fontFamily:{
+                'Manrope':['Manrope','sans-serif']
+              },
+              backgroundImage:{
+                'banner':"url('./images/banner.png')"
+              }
+            }
+          }
+        }
+      </script>
 </head>
 <body>
-    
+    <!-- navbar section start  -->
+    <div class="flex justify-around m-16">
+        <div>
+            <img src="./images/logo2.png" alt="">
+        </div>
+        <div>
+            <ul class="flex justify-around gap-10">
+                <li>Home</li>
+                <li>Services</li>
+                <li>Cases</li>
+                <li>Blog</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <button class="px-4 py-2 rounded-lg bg-symon text-white text-lg font-bold">Free Consultation</button>
+    </div>
+    <!-- navbar section end -->
 </body>
 </html>
